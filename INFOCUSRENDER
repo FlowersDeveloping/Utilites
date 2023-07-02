@@ -8,6 +8,3 @@ InputService.WindowFocused:Connect(function()
 InputService.WindowFocusReleased:Connect(function()
   RunService:Set3dRenderingEnabled(false)
 end)
-
--- SET FPS LIMITED TO 10, CHANGE TO EVEN LOWER VALUES IF YOU WANT TO
-setfpscap(10)
