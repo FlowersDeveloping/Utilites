@@ -1,0 +1,13 @@
+local InputService = game:GetService("UserInputService")
+local RunService = game:GetService("RunService")
+
+InputService.WindowFocused:Connect(function()
+  RunService:Set3dRenderingEnabled(true)
+ end)
+
+InputService.WindowFocusReleased:Connect(function()
+  RunService:Set3dRenderingEnabled(false)
+end)
+
+-- SET FPS LIMITED TO 10, CHANGE TO EVEN LOWER VALUES IF YOU WANT TO
+setfpscap(10)
